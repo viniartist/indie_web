@@ -1,0 +1,17 @@
+{% set log = load_data(path="data/updates.toml") %}
+{% set latest = log.updates[0] %}
+
+<footer>
+<p>
+© {{ now() | date(format="%Y") }} vini.art.br -
+build {{ latest.version }}
+ <a href="{{ get_url(path='@/u.md') }}">[DevLog]</a>
+- {{ latest.date }}
+[<a href="{{ get_url(path='@/m.md') }}">Manifesto</a>]
+</p>
+
+<p>
+Feito por humano, rejeitando feeds infinitos desde 01.07.2026
+</p>
+
+</footer>
