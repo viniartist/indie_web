@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="/style.css"> 
     <title>Document</title>
 </head>
 <body>
+  {% include "partials/topmenu.html" %}
+    <div class="card-stage">
+    <div class="card">
+      <span class="tick-tr" aria-hidden="true"></span>
+      <span class="tick-bl" aria-hidden="true"></span>
+      <div class="card-content article">
 
-  <section class="section">
-    <div class="container">
       {% block content %} {% endblock content %}
+        </div>
     </div>
-  </section>
+  </div>
+  {% include "partials/footer.html" %}
    <!-- <script src="/js/media.js"></script> -->
 </body>
 </html>
