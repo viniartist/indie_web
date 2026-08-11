@@ -1,5 +1,6 @@
 +++
-title = "Vini Kran | Tela Pele Papel"
+title = "tela.pele.papel"
+description = "Bem-​vindo ao meu ateliê"
 sort_by = "date"
 template = "index.html"
 +++

@@ -1,0 +1,35 @@
+{% set log = load_data(path="data/updates.toml") %}
+{% set latest = log.updates[0] %}
+
+<footer class="footer">
+
+<nav class="page-navigation">
+
+{% if page.higher %}
+    <a href="{{ page.higher.permalink }}">&laquo; Anterior</a>
+{% else %}
+    <span class="disabled">&laquo; Anterior</span>
+{% endif %}
+
+<a href="{{ get_url(path=page.extra.section_index) }}">Índice</a>
+
+{% if page.lower %}
+    <a href="{{ page.lower.permalink }}">Próximo &raquo;</a>
+{% else %}
+    <span class="disabled">Próximo &raquo;</span>
+{% endif %}
+
+</nav>
+
+
+<p>
+© {{ now() | date(format="%Y") }} vini.art.br -
+build {{ latest.version }}
+ <a href="{{ get_url(path='@/u.md') }}">[DevLog]</a>
+- {{ latest.date }}
+<a href="{{ get_url(path='@/m.md') }}">[Manifesto]</a>
+<br>
+Feito por humano, rejeitando feeds infinitos desde 01.07.2026 </p>
+</footer>
+
+

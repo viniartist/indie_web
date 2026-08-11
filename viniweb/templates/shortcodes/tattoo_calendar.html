@@ -1,0 +1,64 @@
+{% set tattoo = load_data(path="data/tattoo_cal.toml") %}
+
+<h2>{{ tattoo.month }} {{ tattoo.year }}</h2>
+
+<!--
+<h3>qui sex sab</h3>
+<p>
+{% for q in tattoo.qui %}
+{% set s = tattoo.sex[loop.index0] %}
+{% set b = tattoo.sab[loop.index0] %}
+{% if q in tattoo.booked %}XX{% else %}{% if q < 10 %}0{% endif %}{{ q }}{% endif %} {% if s in tattoo.booked %}XX{% else %}{% if s < 10 %}0{% endif %}{{ s }}{% endif %} {% if b in tattoo.booked %}XX{% else %}{% if b < 10 %}0{% endif %}{{ b }}{% endif %}
+{% endfor %}
+</p>
+-->
+<div class="tattoo-calendar">
+
+    <div class="calendar-column">
+        <h3>QUI</h3>
+
+        {% for q in tattoo.qui %}
+            <div class="calendar-day">
+                {% if q in tattoo.booked %}
+                    XX
+                {% else %}
+                    {% if q < 10 %}0{% endif %}{{ q }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="calendar-column">
+        <h3>SEX</h3>
+
+        {% for q in tattoo.qui %}
+            {% set s = tattoo.sex[loop.index0] %}
+            <div class="calendar-day">
+                {% if s in tattoo.booked %}
+                    XX
+                {% else %}
+                    {% if s < 10 %}0{% endif %}{{ s }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="calendar-column">
+        <h3>SAB</h3>
+
+        {% for q in tattoo.qui %}
+            {% set b = tattoo.sab[loop.index0] %}
+            <div class="calendar-day">
+                {% if b in tattoo.booked %}
+                    XX
+                {% else %}
+                    {% if b < 10 %}0{% endif %}{{ b }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+<h2>{{ tattoo.n_month }}</h2>
+<h3>Agenda divulgada em 20 de {{ tattoo.month }}</h3>

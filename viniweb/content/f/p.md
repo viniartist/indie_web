@@ -1,14 +1,10 @@
 +++
-title = "Perguntas frequentes"
+title = "Pintura FAQ"
+description = "Antes de encomendar uma pintura a óleo"
 date = 2019-11-28
 template = "pages.html"
 +++
 
-### Tudo o que você precisa saber antes de encomendar uma pintura a óleo — do processo ao cuidado com a obra.
-
-## SOBRE A TÉCNICA
-
-### O que é pintura a óleo?
 
 A pintura a óleo é uma técnica tradicional onde o pigmento é misturado a óleos naturais e aplicado sobre a tela. É um dos métodos mais consagrados da história da arte, utilizado há séculos e presente em museus do mundo inteiro.
 Além da riqueza visual — profundidade, textura e variações sutis de cor — a pintura a óleo se destaca pela durabilidade. Quando bem cuidada, uma obra pode atravessar gerações mantendo sua integridade e beleza.

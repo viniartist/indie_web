@@ -1,0 +1,9 @@
+month = "Setembro"
+n_month = "Outubro"
+year = 2026
+
+qui = [4, 11, 18, 25]
+sex = [5, 12, 19, 26]
+sab = [6, 13, 20, 27]
+
+booked = [11, 19, 27]

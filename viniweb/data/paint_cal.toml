@@ -1,0 +1,19 @@
+year = 2026
+season = 2
+
+months = [
+  "Jul",
+  "Ago",
+  "Set",
+  "Out",
+  "Nov",
+  "Dez"
+]
+
+days = [1, 11, 21]
+
+booked = [
+  "Jul-1",
+  "Out-11",
+  "Nov-21"
+]

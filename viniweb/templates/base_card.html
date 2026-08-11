@@ -36,7 +36,7 @@ Hyphenopoly.config({
   <div class="layout">
   {% include "partials/topmenu.html" %}
 
-     <main class="card">
+     <main class="card" style="background-image: url('{{ page.extra.background }}');">
         <div class="top-card">
         <h1>{{ page.title }}</h1>
         <h3>{{ page.description }}</h3>
@@ -48,7 +48,7 @@ Hyphenopoly.config({
         </div>
     </main>
 
-  {% include "partials/footer.html" %}
+  {% include "partials/footer_card.html" %}
   </div>
    <!-- <script src="/js/media.js"></script> -->
 </body>

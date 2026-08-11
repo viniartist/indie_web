@@ -1,11 +1,9 @@
 {% set log = load_data(path="data/updates.toml") %}
 
-<pre>
-Ultimas duas Atualizações:
+
+<h2>Ultimas duas Atualizações:</h2>
 
 {% for item in log.updates | slice(end=2) %}
-{{ item.version }} — {{ item.date }}
-{{ item.text }}
-
+<h4>{{ item.version }} — {{ item.date }}</h4>
+<p>{{ item.text }}</p>
 {% endfor %}
-</pre>

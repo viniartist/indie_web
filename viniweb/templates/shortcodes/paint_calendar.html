@@ -1,0 +1,27 @@
+{% set oil = load_data(path="data/paint_cal.toml") %}
+
+<h3>AGENDA - ENCOMENDAS S{{ oil.season }} {{ oil.year }}</h3>
+
+<div class="tattoo-calendar">
+
+    {% for month in oil.months %}
+
+        <div class="calendar-month">
+            {{ month }}
+        </div>
+
+        {% for day in oil.days %}
+            {% set key = month ~ "-" ~ day %}
+
+            <div class="calendar-day">
+                {% if key in oil.booked %}
+                    XX
+                {% else %}
+                    {% if day < 10 %}0{% endif %}{{ day }}
+                {% endif %}
+            </div>
+        {% endfor %}
+
+    {% endfor %}
+
+</div>
