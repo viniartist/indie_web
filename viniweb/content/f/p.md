@@ -60,3 +60,5 @@ A manutenção é simples, mas importante para garantir a longevidade da obra:
 - Mantenha longe de fontes de calor intenso
 - Evite posicionar diretamente acima de caixas de som
 - -Para limpeza, utilize apenas um pano seco e macio, sem produtos químicos
+
+[← Voltar](@/p/_index.md)

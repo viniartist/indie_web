@@ -5,5 +5,7 @@
 
 {{ section.content | safe }}
 {% include "partials/list.html" %}
+
 {% include "partials/contact.html" %}
+<a href="{{ get_url(path="@/_index.md") }}">[← Voltar]</a>
 {% endblock content %}
