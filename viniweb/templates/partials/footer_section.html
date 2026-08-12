@@ -2,6 +2,11 @@
 {% set latest = log.updates[0] %}
 
 <footer class="footer">
+
+<nav class="page-navigation">
+<a href="{{ get_url(path="@/_index.md") }}">[← Voltar]</a>
+</nav>
+
 <p>
 © {{ now() | date(format="%Y") }} vini.art.br -
 build {{ latest.version }}

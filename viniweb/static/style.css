@@ -155,6 +155,13 @@ calc(var(--footer-height) + (var(--leftover)/2));
     overflow-y:auto;
 }
 
+.card-scroll img{
+    width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
+
 
 .prose {
     text-align: justify;
@@ -295,7 +302,72 @@ calc(var(--footer-height) + (var(--leftover)/2));
     padding: .5rem;
 }
 
+/* MENU */
+.card {
+    position: relative;
+}
 
+.menu-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.88);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+
+    z-index: 100;
+}
+
+.menu-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    text-align: center;
+}
+.menu-content p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-content a:hover {
+    text-decoration: underline;
+}
+
+.menu-button {
+    position: relative;
+    z-index: 101;
+
+    border: 0;
+    padding: 0;
+
+    background: transparent;
+    color: inherit;
+
+    font: inherit;
+    cursor: pointer;
+}
 
 
 

@@ -3,8 +3,10 @@
     {# Verifica se a página NÃO deve ser ocultada #}
     {% if not page.extra.no_listed %}
       <li>
-        <span class="post-date">{{ page.date | date(format="%d/%m/%Y") }}</span>
-        <a href="{{ page.permalink }}">{{ page.title }}</a>
+        <a href="{{ page.permalink }}">
+        <img src="{{ get_url(path=page.extra.background) }}" alt="{{ page.title }}" class="post-image">
+        {{ page.title }}:{{ page.description }}
+        </a>
       </li>
     {% endif %}
   {% else %}

@@ -36,20 +36,23 @@ Hyphenopoly.config({
   <div class="layout">
   {% include "partials/topmenu.html" %}
 
-     <main class="card" style="background-image: url('{{ get_url(path=page.extra.background) }}');">
+     <main class="card">
         <div class="top-card">
-        <h1>{{ page.title }}</h1>
-        <h3>{{ page.description }}</h3>
+        <h1>{{ section.title }}</h1>
+        <h3>{{ section.description }}</h3>
         </div>
 
-        <div class="card-fixed">
+        <div class="card-scroll prose" lang="pt-BR">
+        
 
-             {% block content %} {{ page.content | safe }} {% endblock content %}
+             {% block content %} {% endblock content %}
         </div>
-        {% include "partials/menu.html" %}
+
+
+         {% include "partials/menu.html" %}
     </main>
 
-  {% include "partials/footer_card.html" %}
+  {% include "partials/footer.html" %}
   </div>
    <script src="/js/menu.js"></script>
 </body>

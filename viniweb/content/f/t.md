@@ -3,6 +3,8 @@ title = "Tattoo FAQ"
 description = "Tudo sobre tatuar comigo"
 date = 2019-11-28
 template = "pages.html"
+[extra]
+section_index = "@/t/_index.md"
 +++
 
 
@@ -103,5 +105,3 @@ Use hidratante corporal regularmente e filtro solar sempre que exposta ao sol �
 - Dor excessiva após os primeiros dias
 - Secreção incomum ou com odor
 - Em caso de dúvida, estou disponível para orientar.
-
-[← Voltar](@/t/_index.md)

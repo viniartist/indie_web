@@ -3,6 +3,8 @@ title = "Manifesto"
 description = "Uma reação à internet moderna"
 date = 2019-11-28
 template = "pages.html"
+[extra]
+section_index = "@/_index.md"
 +++
 
 A internet já foi composta principalmente por pequenos sites pessoais. Pessoas criavam páginas próprias para compartilhar ideias, projetos, imagens, textos, obsessões, arquivos e experiências. Cada site tinha personalidade própria. Cada página refletia quem a construiu.
